@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+    </style>
+  </head>
+  <body style="background-color: #ededed;">
+    <h1 style="text-align: center;" class="container-fluid"> This is a sample form</h1>
+    <div style="width: 81%; margin-left : 9.5%; border-radius: 10px; background-color: #e0e0e0;">
+      <form style="width: 98%; margin-left : 1%;">
+        <div class="form-group">
+          <br>
+          <label>Nickname</label>
+          <input style="margin:center;" class="form-control" type="text" placeholder="Enter Nickname">
+          <br>
+          <label>Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <br>
+          <label>Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <br>
+          <label>Gender</label>
+          <br>
+          <input type="radio" name="gender" value="male" checked> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+          <br></br>
+          <label>Security Question:</label>
+          <br>
+          <select>
+            <option value="What is your favorite type of pet?">What is your favorite type of pet?</option>
+            <option value="What is your favorite ride sharing service?">What is your favorite ride sharing service?</option>
+            <option value="Where do you want to work after finishing your education?">Where do you want to work after finishing your education?</option>
+          </select>
+          <br></br>
+          <label>Answer:</label>
+          <input style="margin:center;" class="form-control" type="text" placeholder="Security Answer">
+          <br>
+          <label>Favorite Programing Languages</label>
+          <br>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">C/C++
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">Java
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">Javascript
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">Python
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">GO
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">C#
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">PHP
+          </label>
+          <br></br>
+          <label>Additional Information</label>
+          <p>About me</p>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <br>
+        </div>
+      </form>
+    </div>
+  </body>
+
+</html>
