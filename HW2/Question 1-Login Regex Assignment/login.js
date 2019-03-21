@@ -17,7 +17,7 @@ function openModal() {
         var lowerCaseLetters = /[a-z]/g; // : Fill in the regular experssion for lowerCaseLetters
         var upperCaseLetters = /[A-Z]/g; // : Fill in the regular experssion for upperCaseLetters
         var numbers = /[0-9]/g; // : Fill in the regular experssion for digits
-        var minLength = 1000; // : Change the minimum length to what what it needs to be in the question
+        var minLength = 8; // : Change the minimum length to what what it needs to be in the question
         /* TODO: Question 1.1: Ends here */
 
 
