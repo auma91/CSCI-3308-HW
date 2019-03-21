@@ -12,7 +12,7 @@
     <style>
     </style>
   </head>
-  <body style="background-color: #ededed;">
+  <body>
     <h1 style="text-align: center;" class="container-fluid"> This is a sample form</h1>
     <div style="width: 81%; margin-left : 9.5%; border-radius: 10px; background-color: #e0e0e0;">
       <form style="width: 98%; margin-left : 1%;">
@@ -30,14 +30,14 @@
           <label>Gender</label>
           <br>
           <input type="radio" name="gender" value="male" checked> Male<br>
-          <input type="radio" name="gender" value="female"> Female<br>
           <input type="radio" name="gender" value="other"> Other
+          <input type="radio" name="gender" value="female"> Female<br>
           <br></br>
-          <label>Security Question:</label>
+          <label>Security Question</label>
           <br>
           <select>
-            <option value="What is your favorite type of pet?">What is your favorite type of pet?</option>
-            <option value="What is your favorite ride sharing service?">What is your favorite ride sharing service?</option>
+            <option value="What is your favorite type of pet?                       ">What is your favorite type of pet?</option>
+            <option value="What is your favorite ride sharing service?              ">What is your favorite ride sharing service?</option>
             <option value="Where do you want to work after finishing your education?">Where do you want to work after finishing your education?</option>
           </select>
           <br></br>
@@ -47,13 +47,13 @@
           <label>Favorite Programing Languages</label>
           <br>
           <label class="checkbox-inline">
-            <input type="checkbox" value="">C/C++
-          </label>
-          <label class="checkbox-inline">
             <input type="checkbox" value="">Java
           </label>
           <label class="checkbox-inline">
             <input type="checkbox" value="">Javascript
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" value="">C/C++
           </label>
           <label class="checkbox-inline">
             <input type="checkbox" value="">Python
@@ -71,8 +71,12 @@
           <label>Additional Information</label>
           <p>About me</p>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          <br>
+
         </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          submit
+        </button>
+        <br>
       </form>
     </div>
   </body>
