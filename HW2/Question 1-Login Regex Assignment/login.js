@@ -34,51 +34,54 @@ function openModal() {
 
         // Validate lowercase letters
         if(myInput.value.match(lowerCaseLetters)) {
-            letter.classList.remove("");
-            letter.classList.add("");
+            letter.classList.remove("invalid");
+            letter.classList.add("valid");
         } else {
-            letter.classList.remove("");
-            letter.classList.add("");
+            letter.classList.remove("invalid");
+            letter.classList.add("valid");
         }
 
         // Validate capital letters
         if(myInput.value.match(upperCaseLetters)) {
-            capital.classList.remove("");
-            capital.classList.add("");
+            capital.classList.remove("invalid");
+            capital.classList.add("valid");
         } else {
-            capital.classList.remove("");
-            capital.classList.add("");
+            capital.classList.remove("invalid");
+            capital.classList.add("valid");
         }
 
         // Validate numbers
         if(myInput.value.match(numbers)) {
-            number.classList.remove("");
-            number.classList.add("");
+            number.classList.remove("invalid");
+            number.classList.add("valid");
         } else {
-            number.classList.remove("");
-            number.classList.add("");
+            number.classList.remove("valid");
+            number.classList.add("invalid");
         }
 
         // Validate length
         if(myInput.value.length >= minLength) {
-            length.classList.remove("");
-            length.classList.add("");
+            length.classList.remove("invalid");
+            length.classList.add("valid");
         } else {
-            length.classList.remove("");
-            length.classList.add("");
+            length.classList.remove("invalid");
+            length.classList.add("valid");
         }
         /* TODO: Question 1.2:  Ends here */
     }
     /* TODO Question 1.3: Starts here */
     confirmMyInput.onkeyup = function() {
                 // Validate password and confirmPassword
-                var passEqualsConfPass = (false); // TODO: Change this to the condition that needs to be checked so that the text entered in password equals the text in confirm password
+                var passEqualsConfPass;
+                if(document.getElementById("psw").value==document.getElementById("cpsw").value){passEqualsConfPass=(true);}
+                else {passEqualsConfPass=(false);}
+                // TODO: Change this to the condition that needs to be checked so that the text entered in password equals the text in confirm password
                 if(passEqualsConfPass) {
-                    match.classList.remove("");
-                    match.classList.add("");
+                    match.classList.remove("invalid");
+                    match.classList.add("valid");
                 } else {
-                    match.classList.remove("");
-                    match.classList.add("");
+                    match.classList.remove("valid");
+                    match.classList.add("invalid");
                 }
     /* TODO Question 1.3: Starts here */
 
@@ -91,11 +94,14 @@ function openModal() {
 function enableButton(letter, capital, number, length, match) {
     // TODO: Clear this function for students to implement
     var button = document.getElementById('my_submit_button');
-    var condition = (false); // TODO: Replace false with the correct condition
+    var condition = (letter.classList.contains("valid") && letter.classList.contains("valid") && letter.classList.contains("valid") && letter.classList.contains("valid") && letter.classList.contains("valid")); // TODO: Replace false with the correct condition
     if(condition) {
             button.disabled = false;
-        }
     }
+    else {
+      button.disabled = true;
+    }
+}
 
 
 function onClickFunction() {

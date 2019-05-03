@@ -1,4 +1,4 @@
-function calC(c) {  
+function calC(c) {
     // TODO: 3.1
     // This function does the evaluation for the calculator
     /*
@@ -6,10 +6,10 @@ function calC(c) {
     document.getElementById('panel').value += c;
     You need to convert the line above to JQuery.
     If you are writing more than a couple of lines of code, something is off. Check the reference links again
-    */       
+    */
+    var current = $( "#panel" ).val();
+    $( "#panel" ).val( current+c);
 
-   
-    
 }
 function CE() {
     // TODO: 3.2
@@ -19,7 +19,6 @@ function CE() {
     document.getElementById('panel').value = "";
     You need to convert the line above to JQuery.
     If you are writing more than a couple of lines of code, something is off. Check the reference links again
-    */      
-
+    */
+    $( "#panel" ).val("");
 }
-
